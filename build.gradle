@@ -1,0 +1,19 @@
+tasks.named('wrapper') {
+    distributionType = Wrapper.DistributionType.ALL
+}
+
+project.subprojects.each {
+    it.plugins.apply('java-library')
+
+    it.repositories {
+        mavenCentral()
+        mavenLocal()
+    }
+
+    it.java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(8)
+        }
+    }
+}
+

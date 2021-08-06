@@ -1,0 +1,23 @@
+# Eclipse
+.metadata
+.classpath
+.project
+.settings
+.factorypath
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea
+
+# Build
+target
+test-output
+build
+out
+bin
+
+# Gradle
+.gradle
+

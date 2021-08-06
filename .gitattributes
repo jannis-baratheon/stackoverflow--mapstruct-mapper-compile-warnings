@@ -1,0 +1,21 @@
+# Repository specific GIT options
+
+# Set default handling of line endings
+* text=auto
+
+# Explicitly declare text files we want to always be normalized and converted
+# to native line endings on checkout.
+*.java text
+*.xml text
+*.txt text
+*.md text
+
+# Java-friendly readable chunk headers
+
+*.java	diff=java
+
+#
+# https://help.github.com/articles/dealing-with-line-endings/
+#
+# These are explicitly windows files and should use crlf
+*.bat           text eol=crlf

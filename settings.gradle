@@ -1,0 +1,4 @@
+rootProject.name = 'mapstruct-gradle'
+
+include 'model'
+include 'mapper'
